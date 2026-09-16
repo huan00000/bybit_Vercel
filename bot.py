@@ -123,6 +123,10 @@ def webhook():
     update = request.get_json(silent=True)
     if not isinstance(update, dict):
         return 'Invalid JSON', 400
+    return handle_update(update)
+
+
+def handle_update(update):
     message = update.get('message')
     if not isinstance(message, dict):
         return 'OK', 200
