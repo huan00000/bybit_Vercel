@@ -66,7 +66,7 @@ def reply(chat_id, text):
 
 def execute(update, message, command):
     if command == 'id':
-        return f'你的 ID：{message["from"]["id"]}'
+        return f'Your ID：{message["from"]["id"]}'
     ids = re.split(r'[\s,]+', os.environ.get('ALLOWED_TELEGRAM_IDS', '').strip())
     if not ids or any(not re.fullmatch(r'[1-9]\d*', item) for item in ids):
         return '❌ 白名单未配置或格式错误，操作已拒绝。'
