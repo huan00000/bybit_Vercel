@@ -1,7 +1,7 @@
 name: Build Docker image
 on:
   push:
-    branches: [main, bybit]
+    branches: [main, bybit, docker]
     tags: ['v*']
   pull_request:
   workflow_dispatch:
