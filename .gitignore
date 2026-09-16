@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+node_modules/
+data/
+id.txt
+telegram-offset.json*
+*.log
+__pycache__/
+*.pyc
+.venv/
+.vercel/
